@@ -1,0 +1,14 @@
+p {
+    color: blue;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  .container {
+    text-align: center;
+    font-size: 15px;
+    margin: 2px;
+    border: 1px blue solid;
+  }
