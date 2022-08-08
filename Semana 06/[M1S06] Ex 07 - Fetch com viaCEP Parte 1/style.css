@@ -1,0 +1,22 @@
+#btn {
+    text-align: center;
+    padding: 5px;
+    
+}
+
+#cep-entrada {
+    text-align: center;
+    padding: 5px;
+}
+
+body {
+    justify-content: center;
+    background-color: rgb(80, 140, 180);
+    text-align: center;
+
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
