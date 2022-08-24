@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> KNOWLEDG </title>
+    <link rel="stylesheet" href="Styles.css">
+    <script src="Index.js" type="module"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="Header" class="bg-warning">
+             <div>
+                <h1>DEVinKnowledge</h1>
+            </div>
+        </div>
+    </header>
+
+    <div id="container">
+        <div id="left-column">
+            <h2>Deixe sua dica</h2>
+
+            <form id="formulario">
+                <label for="input-title">Título</label>
+                <input id="input-title" name="title" type="text" placeholder="Informe a sua dica " minlength="4"
+                    maxlength="32" required>
+
+                <label for="input-about">Linguagem</label>
+                <br />
+                <input type="text" minlength="1" maxlength="32" id="input-about" name="about"
+                    placeholder="Digite uma linguagem ou Skill" required />
+
+                <label for="input-category">Categoria</label>
+                <select id="input-category" name="category" required class="bg-white">
+                    <option value="selecione" selected>Selecione uma categoria</option>
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
+                    <option value="FullStack">FullStack</option>
+                    <option value="SoftSkills">Soft Skills</option>
+                    <select>
+
+                        <label for="input-description">Descrição</label>
+                        <textarea id="input-description" name="description" min-length="8" max-length="128"
+                            placeholder="Descreva aqui sua dica" required></textarea>
+
+                        <label for="input-link">Link</label>
+                        <input type="text" name="link" id="input-link" placeholder="Inclua um link" minlength="18"
+                            maxlength="128">
+
+                        <div id="form-btn-box">
+                            <button type="reset" class="btn btn-outline-danger me-md-2 mt-2">Limpar</button>
+                            <button type="submit" class="btn btn-outline-success mt-2">Salvar</button>
+                        </div>
+            </form>
+        </div>
+        <div id="right-column">
+            <div id="categories">
+
+                <div>
+                    <p> Front-end </p>
+                    <p id="n-frontend" class="n-category">0</p>
+                </div>
+
+                <div>
+                    <p> Back-end </p>
+                    <p id="n-backend" class="n-category">0</p>
+                </div>
+
+                <div>
+                    <p> Full Stack </p>
+                    <p id="n-fullstack" class="n-category">0</p>
+                </div>
+
+                <div>
+                    <p>Soft Skills</p>
+                    <p id="n-softskills" class="n-category">0</p>
+                </div>
+
+                <div>
+                    <p> Total de Dicas</p>
+                    <p id="n-total-cards" class="n-category">0</p>
+                </div>
+            </div>
+            <div id="search-box">
+                <input type="text" id="input-search" name="search" placeholder="Digite para pesquisar">
+                <button id="btn-search" class="btn btn-outline-primary">🔎</button>
+                <button id="btn-clear-search" class="btn btn-outline-danger">❌</button>
+            </div>
+                
+    </div>
+</body>
+
+</html>
