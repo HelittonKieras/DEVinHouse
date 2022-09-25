@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    -ms-flex-align: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input {
+    display: flex;
+    flex-direction: column;
+}
+
+#input3 {
+    height: 100px;
+}
+
+img {
+    width: 200px;
+}
